@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../assets/Pictures/logo.png'
+import { Link } from 'react-router-dom'
 const Navbar = () => {
   return (
     <div>
@@ -52,12 +53,12 @@ const Navbar = () => {
           </a>
         </li>
         <li className="nav-item">
-          <a
+          <Link
             className="nav-link btn text-white bg-dark px-3 rounded-0"
-            href="contact.html"
+            to="/contact"
           >
             Contact Us
-          </a>
+          </Link>
         </li>
       </ul>
     </div>
